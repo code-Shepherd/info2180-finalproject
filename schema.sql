@@ -42,4 +42,4 @@ CREATE TABLE Notes (
 -- Example INSERT statement for Users
 INSERT INTO Users (firstname, lastname, password, email, role)
 VALUES 
-('Admin', 'User', '$2y$10$EXAMPLEHASHEDPASSWORD', 'admin@project2.com', 'admin');
+('Admin', 'User', '$2y$10$MeeuRLDMCYLVtg0CfGavoe/hMPGh9c7D/.KUZpGFPPoSrjNg9zV/G', 'admin@project2.com', 'admin');
