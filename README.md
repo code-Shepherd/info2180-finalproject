@@ -1,4 +1,5 @@
-# webdev_project_2024
+#INFO2180 FINAL PROJECT 
+
 Group Members:
 
 Chanchal Khiani-620155522
