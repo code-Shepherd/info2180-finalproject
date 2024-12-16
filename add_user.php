@@ -24,6 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = "All fields are required.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format.";
+    } elseif (!preg_match('/(?=.*[a-zA-Z])(?=.*\d)/', $password)) {
+        $errors[] = "Password must contain at least one letter and one number.";
     } elseif ($role !== 'admin' && $role !== 'member') {
         $errors[] = "Invalid role selected.";
     } else {
@@ -102,6 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            <small>Password must contain at least one letter and one number.</small>
 
             <button type="submit">Add User</button>
         </form>
